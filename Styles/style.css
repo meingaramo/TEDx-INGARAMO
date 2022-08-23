@@ -287,6 +287,11 @@
     border-radius: 106px;
     padding: 3px;
     border: 3px dotted #00cddc;
+    transition: 0.3s;
+}
+.equipo img:hover{
+    transform: rotate(15deg) scale(1.1, 1.1);
+    border: 5px dotted #E63629;
 }
 .equipo h3{
     text-decoration: none;
