@@ -147,6 +147,13 @@
     padding: 8px 20px 8px 20px;
     border-radius: 8px;
     border: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.bottom:hover{
+    transform: scale(1.2 , 1.2);
+    color: #E63629;
+    background-color: #ffff;
 }
 #voluntarios input{
     position: relative;
@@ -401,6 +408,10 @@
     padding: 8px 20px 8px 20px;
     border-radius: 8px;
     border: transparent;
+    transition: 0.3s ease;
+}
+.bottomEnviar:hover{
+    transform: scale(1.2 , 1.2);
 }
 .footer{
     display: flex;
@@ -585,7 +596,29 @@
         position: relative;
         width: 250px;
         top: 60px;
+        animation-name: efectoX;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 3s;
+        animation-delay: 02s;
     }
+    @keyframes efectoX {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(0.8, 0.8);
+        }
+        50% {
+          transform: scale(1, 1);
+        }
+        75% {
+          transform: scale(0.8, 0.8);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
     #tedx180E div p{
         position: relative;
         top: 100px;
