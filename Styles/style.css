@@ -43,13 +43,10 @@
 
 .titulos{
     color: #ffff;
-    display: inline;
     font-size: 35px;
     letter-spacing: -2px;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    margin-left: 40px;
-    margin-top: 50px;
     --color: #E63629;
 }
 .titulos::before {
@@ -63,33 +60,21 @@
 }
 .body_index{
     color: #ffff;
-    padding-top: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 30px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
-#tedx180E{
-    grid-area: evento;
-    margin-top:30px;
-    margin-bottom: 50px;
-}
-#tedx180E div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #tedx180E div h5{
-    position: relative;
-    top: 30px;
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 #tedx180E div img{
     width: 150px;
+}
+#imagenX{
+    justify-content: center;
+    align-self: center;
 }
 #oradores div{
     justify-items: center;
@@ -110,20 +95,16 @@
     grid-area: voluntarios;
     margin-bottom: 50px;
 }
-.bottom{
+#bottom{
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    position: relative;
-    top: 20px;
+    font-size: 16px;
     background-color: #E63629;
-    padding: 8px 20px 8px 20px;
-    border-radius: 8px;
     border: transparent;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.bottom:hover{
+#bottom:hover{
     transform: scale(1.2 , 1.2);
     color: #E63629;
     background-color: #ffff;
@@ -349,18 +330,15 @@
     height: 150px;
     padding: 10px 0px 0px 15px;
 }
-.bottomEnviar{
+#bottomEnviar{
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 20px;
+    font-size: 16px;
     background-color: #E63629;
-    padding: 8px 20px 8px 20px;
-    border-radius: 8px;
     border: transparent;
     transition: 0.3s ease;
 }
-.bottomEnviar:hover{
+#bottomEnviar:hover{
     transform: scale(1.2 , 1.2);
 }
 #footer{
