@@ -1,0 +1,897 @@
+/* Version Mobile */
+.parallax {
+  background-image: url("../Images/fondo-mobile.png");
+  margin: 0px;
+  padding: 0px;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.nav {
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav ul li {
+  margin: 0;
+  padding: 5px;
+  padding: 8px;
+  padding-right: 45px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 750;
+  font-size: 10px;
+}
+
+.nav ul li a:hover {
+  color: #E63629;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100vh;
+  align-content: flex-start;
+}
+
+.header {
+  background-color: white;
+  grid-area: header;
+  display: flex;
+  height: 40px;
+  box-shadow: 0px 3px 5px #B2B2B2;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulos {
+  color: white;
+  display: inline;
+  font-size: 35px;
+  letter-spacing: -2px;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  margin-left: 40px;
+  margin-top: 50px;
+  --color: #E63629;
+}
+
+.titulos::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  background: none;
+  left: 30px;
+  border-bottom: 4px solid var(--color);
+}
+
+.body_index {
+  color: white;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+#tedx180E {
+  grid-area: evento;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#tedx180E div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tedx180E div h5 {
+  position: relative;
+  top: 30px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+#tedx180E div img {
+  width: 150px;
+}
+
+#oradores {
+  grid-area: oradores;
+}
+
+#oradores div {
+  display: grid;
+  grid-template-areas: "imagen" "texto";
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+
+#oradores div img {
+  grid-area: imagen;
+  height: 150px;
+  margin-top: 50px;
+}
+
+#oradores div p {
+  grid-area: texto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+#sponsors {
+  grid-area: sponsors;
+}
+
+#voluntarios {
+  grid-area: voluntarios;
+  margin-bottom: 50px;
+}
+
+.bottom {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  position: relative;
+  top: 20px;
+  background-color: #E63629;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.bottom:hover {
+  transform: scale(1.2, 1.2);
+  color: #E63629;
+  background-color: white;
+}
+
+#voluntarios input {
+  position: relative;
+  left: 40px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.blackVertical img {
+  height: 130px;
+  padding: 5px;
+}
+
+.blackHorizontal img {
+  width: 130px;
+  padding: 5px;
+}
+
+.goldenHorizontal img {
+  width: 84px;
+  padding: 5px;
+}
+
+.silverVertical img {
+  height: 54px;
+  padding: 5px;
+}
+
+.silverHorizontal img {
+  width: 54px;
+  padding: 5px;
+}
+
+.eventoProximo {
+  grid-area: evento;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.eventoProximo a {
+  text-decoration: none;
+}
+
+.eventoProximo a img {
+  width: 200px;
+}
+
+.eventosAnteriores {
+  grid-area: oradores;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventosAnteriores a {
+  text-decoration: none;
+}
+
+.eventosAnteriores a img {
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+.titulosEventos {
+  width: 300px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  position: relative;
+  right: 30px;
+  padding: 10px;
+}
+
+.charlas {
+  grid-area: evento;
+}
+
+.charlas h4 {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.charlas article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0px 0px 50px;
+}
+
+.charlas img {
+  width: 200px;
+  box-shadow: 3px 2px 11px 2px #aeaeae;
+}
+
+.charlas div {
+  padding-bottom: 60px;
+}
+
+.charlas div h3 {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  position: relative;
+  top: 10px;
+  --color:#E63629;
+}
+
+.charlas div h3::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  background: none;
+  top: 5px;
+  border-top: 3px solid var(--color);
+}
+
+.charlas a {
+  text-decoration: none;
+}
+
+.equipo {
+  grid-area: evento;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.equipo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.equipo img {
+  width: 150px;
+  border-radius: 106px;
+  padding: 3px;
+  border: 3px dotted #00cddc;
+  transition: 0.3s;
+}
+
+.equipo img:hover {
+  transform: rotate(15deg) scale(1.1, 1.1);
+  border: 5px dotted #E63629;
+}
+
+.equipo h3 {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.equipo a {
+  color: #00cddc;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2;
+  margin-top: 2px;
+}
+
+.historiaTed {
+  grid-area: evento;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.historiaTed img {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.tedx {
+  grid-area: oradores;
+  display: flex;
+  flex-direction: column;
+}
+
+.tedx img {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.titulosDos {
+  display: inline-block;
+  width: 200px;
+  color: #000;
+  font-size: 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  padding: 20px;
+  margin-left: 30px;
+  --color: #E63629;
+  z-index: 1;
+}
+
+.titulosDos::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background: none;
+  top: 120px;
+  left: 40px;
+  border-bottom: 4px solid var(--color);
+}
+
+.parrafo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 30px 20px 30px;
+}
+
+.formularioContacto {
+  grid-area: evento;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.formularioContacto div {
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 2px 2px 11px 2px #e0e0e0;
+  margin: 30px 50px 50px 30px;
+}
+
+.formularioContacto p {
+  font-size: 15px;
+  color: #E63629;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2;
+  width: 300px;
+}
+
+.formularioContacto form fieldset {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2;
+  border: none;
+}
+
+.formularioContacto form fieldset label {
+  margin: 20px 0px 10px 0px;
+}
+
+.formularioContacto form fieldset input {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  height: 50px;
+  padding: 0px 0px 0px 15px;
+}
+
+.formularioContacto form fieldset textarea {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  height: 150px;
+  padding: 10px 0px 0px 15px;
+}
+
+.bottomEnviar {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+  background-color: #E63629;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: transparent;
+  transition: 0.3s ease;
+}
+
+.bottomEnviar:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  grid-area: footer;
+  justify-content: space-between;
+  width: 1fr;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.footer div {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .parallax {
+    background-image: url("../Images/fondo-tablets-600.png");
+  }
+  .nav {
+    display: flex;
+  }
+  .titulos {
+    font-size: 45px;
+    letter-spacing: -3px;
+  }
+  #tedx180E div img {
+    width: 250px;
+  }
+  #oradores div {
+    display: grid;
+    grid-template-areas: "texto imagen";
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  #oradores div img {
+    height: 250px;
+    margin-top: 30px;
+  }
+  .body_index {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .body_index {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 500px;
+  }
+  .eventoProximo a img {
+    width: 250px;
+  }
+  .eventosAnteriores {
+    margin-left: 50px;
+  }
+  .eventosAnteriores div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .eventosAnteriores a img {
+    padding-left: 20px;
+    width: 250px;
+  }
+  .titulosEventos {
+    font-size: 25px;
+    letter-spacing: -2px;
+  }
+  .charlas article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .charlas img {
+    width: 300px;
+  }
+  .charlas div {
+    padding-right: 60px;
+  }
+  .equipo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .equipo img {
+    width: 200px;
+  }
+  .equipo h3 {
+    font-size: 18px;
+  }
+  .equipo a {
+    font-size: 15px;
+  }
+  .historiaTed div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .historiaTed img {
+    width: 400px;
+  }
+  .tedx div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .tedx img {
+    width: 400px;
+  }
+  .parrafo {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .tedx {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .historiaTed {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .formularioContacto div {
+    margin: 30px 50px 50px 180px;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .parallax {
+    background-image: url("../Images/fondo-desktop-1200.png");
+  }
+  .nav {
+    display: flex;
+  }
+  .titulos {
+    font-size: 55px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    letter-spacing: -5px;
+    position: relative;
+    top: 30px;
+    left: 250px;
+    --color: #E63629;
+  }
+  .titulos::before {
+    width: 90px;
+    height: 60px;
+    top: 15px;
+    left: -15px;
+  }
+  .body_index {
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 350px;
+  }
+  #tedx180E {
+    height: 500px;
+  }
+  #oradores {
+    height: 500px;
+  }
+  #tedx180E div img {
+    position: relative;
+    width: 250px;
+    top: 60px;
+    -webkit-animation-name: efectoX;
+            animation-name: efectoX;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  @-webkit-keyframes efectoX {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.8, 0.8);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    75% {
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  @keyframes efectoX {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.8, 0.8);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    75% {
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  #tedx180E div p {
+    position: relative;
+    top: 100px;
+    left: 450px;
+  }
+  #tedx180E div h5 {
+    position: relative;
+    top: 110px;
+    left: 450px;
+  }
+  #oradores div {
+    display: grid;
+    grid-template-areas: "texto imagen";
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 50px;
+  }
+  #oradores div p {
+    grid-area: texto;
+  }
+  #oradores div img {
+    grid-area: imagen;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 300px;
+  }
+  #sponsors {
+    height: 700px;
+  }
+  .blackVertical img {
+    height: 280px;
+  }
+  .blackHorizontal img {
+    width: 280px;
+  }
+  .goldenHorizontal img {
+    width: 180px;
+  }
+  .silverVertical img {
+    height: 115px;
+  }
+  .silverHorizontal img {
+    width: 115px;
+  }
+  #jigger {
+    position: relative;
+    top: 165px;
+    left: 760px;
+  }
+  #spaggiari {
+    position: relative;
+    bottom: 3px;
+    left: 470px;
+  }
+  #vti {
+    position: relative;
+    top: 0px;
+    left: 380px;
+  }
+  #kual {
+    position: relative;
+    top: 38px;
+    left: 570px;
+  }
+  #itrade {
+    position: relative;
+    bottom: 193px;
+    right: 10px;
+  }
+  #ats {
+    position: relative;
+    bottom: 160px;
+    left: 760px;
+  }
+  #victorian {
+    position: relative;
+    top: 2px;
+    left: 455px;
+  }
+  #itec {
+    position: relative;
+    bottom: 450px;
+    left: 760px;
+  }
+  #agro {
+    position: relative;
+    bottom: 217px;
+    left: 70px;
+  }
+  .logos {
+    max-width: 100vh;
+    max-height: 500px;
+  }
+  #voluntarios {
+    height: 500px;
+  }
+  #voluntarios p {
+    margin-top: 50px;
+    max-width: 550px;
+  }
+  #voluntarios input {
+    position: relative;
+    left: 350px;
+  }
+  .eventoProximo a img {
+    width: 350px;
+  }
+  .eventoProximo {
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+  .eventosAnteriores {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+  .eventosAnteriores div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .eventosAnteriores a img {
+    padding-left: 20px;
+    width: 350px;
+  }
+  .charlas img {
+    width: 400px;
+  }
+  .charlas div h3 {
+    font-size: 20px;
+  }
+  .charlas h4 {
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+  .charlas article {
+    margin-left: 110px;
+    margin-bottom: 50px;
+  }
+  .equipo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px 100px 80px 100px;
+  }
+  .equipo div {
+    margin-bottom: 50px;
+  }
+  .equipo img {
+    width: 230px;
+    border-radius: 150px;
+  }
+  .equipo h3 {
+    font-size: 20px;
+  }
+  .equipo a {
+    font-size: 16px;
+  }
+  .parrafo {
+    display: block;
+    width: 700px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .historiaTed h3 {
+    margin-top: 50px;
+  }
+  .titulosDos {
+    margin-left: 200px;
+  }
+  .titulosDos::before {
+    content: "";
+    position: relative;
+    width: 80px;
+    height: 60px;
+    background: none;
+    border-bottom: 4px solid var(--color);
+  }
+  .formularioContacto div {
+    margin: 30px 600px 100px 300px;
+  }
+  .formularioContacto p {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2;
+    width: 410px;
+    padding: 35px;
+  }
+  .formularioContacto div form {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+/* Fin Version Desktop *//*# sourceMappingURL=styles.css.map */
