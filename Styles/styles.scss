@@ -1,18 +1,6 @@
-@import"./partials/header", "./partials/footer", "./partials/index", "./partials/nav";
+@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer";
 
 /* Version Mobile */
-.parallax {
-    background-image: url("../Images/fondo-mobile.png");
-    margin: 0px;
-    padding: 0px;
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom:0px;
-}
-
 .grid{
     display: grid;
     grid-template-areas:

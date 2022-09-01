@@ -1,4 +1,29 @@
 /* Version Mobile */
+.parallax {
+    background-image: url("../Images/fondo-mobile.png");
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:0px;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "evento"
+    "oradores"
+    "sponsors"
+    "voluntarios"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+    height: 100vh;
+    align-content: flex-start;
+}
 .body_index{
     color: #ffff;
     padding-top: 30px;
@@ -97,6 +122,9 @@
 
 /* Version Tablet */
 @media screen and (min-width: 600px){
+    .parallax {
+        background-image: url("../Images/fondo-tablets-600.png");
+    }
     .body_index{
         font-size: 18px;
         line-height: 35px;
@@ -136,6 +164,9 @@
 
 /* Version Desktop */
 @media screen and (min-width: 1200px){
+    .parallax {
+        background-image: url("../Images/fondo-desktop-1200.png");
+    }
     .body_index{
         font-size: 20px;
         line-height: 50px;
