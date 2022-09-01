@@ -1,0 +1,285 @@
+/* Version Mobile */
+.body_index{
+    color: #ffff;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+#tedx180E{
+    grid-area: evento;
+    margin-top:30px;
+    margin-bottom: 50px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h5{
+            position: relative;
+            top: 30px;
+            color: #ffff;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+        img{
+            width: 150px;
+        }
+    }
+}
+#oradores{
+    grid-area: oradores;
+    div{
+        display: grid;
+        grid-template-areas:
+        "imagen"
+        "texto";
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        img{
+            grid-area: imagen;
+            height: 150px;
+            margin-top: 50px;
+        }
+        p{
+            grid-area: texto;
+            height: min-content;
+        }
+    }
+}
+#sponsors{
+    grid-area: sponsors;
+}
+#voluntarios{
+    grid-area: voluntarios;
+    margin-bottom: 50px;
+    input{
+        position: relative;
+        left: 40px;
+    }
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+.blackVertical img{
+    height:130px;
+    padding: 5px;
+}
+
+.blackHorizontal img{
+    width: 130px;
+    padding: 5px;
+}
+
+.goldenHorizontal img{
+    width: 84px;
+    padding: 5px;
+}
+
+.silverVertical img{
+    height: 54px;
+    padding: 5px;
+}
+
+.silverHorizontal img{
+    width: 54px;
+    padding: 5px;
+}
+/* Fin Version Mobile */
+
+/* Version Tablet */
+@media screen and (min-width: 600px){
+    .body_index{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .body_index{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    #tedx180E div img{
+    width: 250px;
+    }
+    #oradores div{
+        display: grid;
+        grid-template-areas:
+        "texto imagen";
+        grid-template-columns: 2fr, 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        img{
+            height: 250px;
+            margin-top: 30px;
+        }
+}
+    .logos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 30px;
+        max-width: 500px;
+    }
+}
+/* Fin Version Tablet */
+
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .body_index{
+        font-size: 20px;
+        line-height: 50px;
+        margin-left: 350px;
+    }
+    #tedx180E{
+        height: 500px;
+        div{
+            img{
+                position: relative;
+                width: 250px;
+                top: 60px;
+                animation-name: efectoX;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-duration: 3s;
+                animation-delay: 02s;
+            }
+            p{
+                position: relative;
+                top: 100px;
+                left: 450px;
+            }
+            h5{
+                position: relative;
+                top: 110px;
+                left: 450px;
+            }
+        }
+    }
+    @keyframes efectoX {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(0.8, 0.8);
+        }
+        50% {
+          transform: scale(1, 1);
+        }
+        75% {
+          transform: scale(0.8, 0.8);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+    #oradores{
+        height: 500px;
+        div{
+            display: grid;
+            grid-template-areas:
+            "texto imagen";
+            grid-template-rows: 1fr;
+            grid-template-columns: 3fr 2fr;
+            margin-top: 50px;
+            p{
+                grid-area: texto;
+            }
+            img{
+                grid-area: imagen;
+                height: 250px;
+                margin-top: 30px;
+                margin-right: 300px;
+            }
+        }
+    }
+    #sponsors{
+        height: 700px;
+    }
+    .blackVertical img{
+        height:280px;
+    }
+    .blackHorizontal img{
+        width: 280px;
+    }
+    .goldenHorizontal img{
+        width: 180px;
+    }
+    .silverVertical img{
+        height: 115px;
+    }
+    .silverHorizontal img{
+        width: 115px;
+    }
+    #jigger{
+        position: relative;
+        top:165px;
+        left: 760px;
+    }
+    #spaggiari{
+        position: relative;
+        bottom: 3px;
+        left: 470px;
+    }
+    #vti{
+        position: relative;
+        top: 0px;
+        left: 380px;
+    }
+    #kual{
+        position: relative;
+        top: 38px;
+        left: 570px;
+    }
+    #itrade{
+        position: relative;
+        bottom: 193px;
+        right: 10px;
+    }
+    #ats{
+        position: relative;
+        bottom: 160px;
+        left: 760px;
+    }
+    #victorian{
+        position: relative;
+        top: 2px;
+        left: 455px;
+    }
+    #itec{
+        position: relative;
+        bottom: 450px;
+        left: 760px;
+    }
+    #agro{
+        position: relative;
+        bottom: 217px;
+        left: 70px;
+    }
+    .logos{
+        max-width: 100vh;
+        max-height: 500px;
+    }
+    #voluntarios{
+        height: 500px;
+        p{
+            margin-top: 50px;
+            max-width: 550px;
+        }
+        input{
+            position: relative;
+            left: 350px;
+        }
+    }
+}
+/* Fin Version Desktop */

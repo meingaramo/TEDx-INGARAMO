@@ -1,0 +1,40 @@
+.nav  {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    ul  {
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+            margin: 0;
+            padding: 05px;
+            padding: 8px;
+            padding-right: 45px;
+            a{
+                text-decoration: none;
+                color: #000;
+                font-family: 'Lato', sans-serif;
+                font-weight: 750;
+                font-size: 10px;
+                &:hover{
+                    color: #E63629;            
+                }
+            }
+        }
+    }
+}
+/* Version Tablet */
+@media screen and (min-width: 600px){
+    .nav {
+        display: flex;
+    }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .nav {
+        display: flex;
+    }
+}
+/* Fin Version Desktop */
