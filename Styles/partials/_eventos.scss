@@ -1,0 +1,25 @@
+/* Version Mobile */
+.eventoProximo{
+    grid-area: evento;
+    margin-left: 50px;
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        img{
+            width: 200px;
+        }
+    }
+}
+.eventosAnteriores{
+    grid-area: oradores;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+        img{
+            padding-bottom: 20px;
+            width: 200px;
+        }
+    }
+}

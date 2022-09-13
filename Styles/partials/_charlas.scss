@@ -1,0 +1,44 @@
+/* Version Mobile */
+.charlas{
+    grid-area: evento;
+    h4{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0px 0px 50px;
+    }
+    img{
+        width: 200px;
+        box-shadow: 3px 2px 11px 2px #aeaeae;
+    }
+    div{
+        padding-bottom: 60px;
+        h3{
+            text-decoration: none;
+            color: #000;
+            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            padding-top: 20px;
+            position: relative;
+            top: 10px;
+            --color:#E63629;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 60px;
+                background: none;
+                top: 5px;
+                border-top: 3px solid var(--color);
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}

@@ -1,4 +1,4 @@
-@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer";
+@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer", "./partials/eventos";
 
 /* Version Mobile */
 .grid{
@@ -53,30 +53,6 @@
         background-color: #ffff;
     }
 }
-.eventoProximo{
-    grid-area: evento;
-    margin-left: 50px;
-    margin-top: 20px;
-    a{
-        text-decoration: none;
-        img{
-            width: 200px;
-        }
-    }
-}
-.eventosAnteriores{
-    grid-area: oradores;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    a{
-        text-decoration: none;
-        img{
-            padding-bottom: 20px;
-            width: 200px;
-        }
-    }
-}
 .titulosEventos{
     width: 300px;
     font-family: 'Lato', sans-serif;
@@ -86,89 +62,6 @@
     position: relative;
     right: 30px;
     padding: 10px;
-}
-.charlas{
-    grid-area: evento;
-}
-.charlas h4{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-.charlas article{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px 0px 0px 50px;
-}
-.charlas img{
-    width: 200px;
-    box-shadow: 3px 2px 11px 2px #aeaeae;
-}
-.charlas div{
-    padding-bottom: 60px;
-}
-.charlas div h3{
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    padding-top: 20px;
-    position: relative;
-    top: 10px;
-    --color:#E63629;
-}
-.charlas div h3::before{
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 60px;
-    background: none;
-    top: 5px;
-    border-top: 3px solid var(--color);
-}
-.charlas a{
-    text-decoration: none;
-}
-.equipo{
-    grid-area: evento;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: relative;
-}
-.equipo div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-.equipo img{
-    width: 150px;
-    border-radius: 106px;
-    padding: 3px;
-    border: 3px dotted #00cddc;
-    transition: 0.3s;
-}
-.equipo img:hover{
-    transform: rotate(15deg) scale(1.1, 1.1);
-    border: 5px dotted #E63629;
-}
-.equipo h3{
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.equipo a{
-    color: #00cddc;
-    font-size: 12px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    letter-spacing: 2;
-    margin-top: 2px;
 }
 .historiaTed{
     grid-area: evento;
