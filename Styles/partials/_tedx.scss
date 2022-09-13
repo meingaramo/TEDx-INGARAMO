@@ -1,1 +1,64 @@
 /* Version Mobile */
+.historiaTed{
+    grid-area: evento;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    img{
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+.tedx{
+    grid-area: oradores;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+/* Fin Version Mobile */
+
+/* Version Tablet */
+@media screen and (min-width: 600px){
+    .historiaTed{
+        margin-left: 30px;
+        margin-bottom: 50px;
+        div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        img{
+        width: 400px;
+        }
+    }
+    .parrafo{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .tedx{
+        margin-left: 30px;
+        margin-bottom: 50px;
+        img{
+            width: 400px;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+/* Fin Version Tablet */
+
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .historiaTed h3{
+        margin-top: 50px;
+    }
+}
+/* Fin Version Desktop */

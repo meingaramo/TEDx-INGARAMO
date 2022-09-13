@@ -22,4 +22,70 @@
             width: 200px;
         }
     }
+.titulosEventos{
+        width: 300px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        position: relative;
+        right: 30px;
+        padding: 10px;
+    }
 }
+/* Fin Version Mobile */
+
+/* Version Tablet */
+@media screen and (min-width: 600px){
+    .eventoProximo a img{
+        width: 250px;
+    }
+    .eventosAnteriores{
+        margin-left: 50px;
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        a{
+            img{
+                padding-left: 20px;
+                width: 250px;
+            }
+        }
+    }
+    .titulosEventos{
+        font-size: 25px;
+        letter-spacing: -2px;
+    }
+}
+/* Fin Version Tablet */
+
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .eventoProximo {
+    margin-left: 150px;
+    margin-bottom: 10px;
+        a{
+            img{
+                width: 350px;
+            }
+        }
+    }
+    .eventosAnteriores{
+        margin-left: 150px;
+        margin-bottom: 30px;
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        a{
+            img{
+                padding-left: 20px;
+                width: 350px;
+            }
+        }
+    }
+}
+/* Fin Version Desktop */

@@ -1,4 +1,4 @@
-@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer", "./partials/eventos";
+@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer", "./partials/eventos", "./partials/contacto","./partials/charlas","./partials/tedx","./partials/equipo";
 
 /* Version Mobile */
 .grid{
@@ -53,35 +53,7 @@
         background-color: #ffff;
     }
 }
-.titulosEventos{
-    width: 300px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -1px;
-    position: relative;
-    right: 30px;
-    padding: 10px;
-}
-.historiaTed{
-    grid-area: evento;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-.historiaTed img{
-    width: 300px;
-    margin-left: 30px;
-}
-.tedx{
-    grid-area: oradores;
-    display: flex;
-    flex-direction: column;
-}
-.tedx img{
-    width: 300px;
-    margin-left: 30px;
-}
+
 .titulosDos{
     display: inline-block;
     width: 200px;
@@ -111,68 +83,6 @@
     line-height: 30px;
     margin: 20px 30px 20px 30px;
 }
-.formularioContacto{
-    grid-area: evento;
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.formularioContacto div{
-    padding: 30px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 2px 2px 11px 2px #e0e0e0;
-    margin: 30px 50px 50px 30px;
-}
-.formularioContacto p{
-    font-size: 15px;
-    color: #E63629;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2;
-    width: 300px;
-}
-.formularioContacto form fieldset{
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    color: #000;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    letter-spacing: 2;
-    border: none;
-}
-.formularioContacto form fieldset label{
-    margin: 20px 0px 10px 0px;
-}
-.formularioContacto form fieldset input{
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 10px;
-    height: 50px;
-    padding: 0px 0px 0px 15px;
-}
-.formularioContacto form fieldset textarea{
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 10px;
-    height: 150px;
-    padding: 10px 0px 0px 15px;
-}
-.bottomEnviar{
-    color: #ffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 20px;
-    background-color: #E63629;
-    padding: 8px 20px 8px 20px;
-    border-radius: 8px;
-    border: transparent;
-    transition: 0.3s ease;
-}
-.bottomEnviar:hover{
-    transform: scale(1.2 , 1.2);
-}
-
 /* Fin Version Mobile */
 
 /* Version Tablet */
@@ -183,81 +93,6 @@
     .titulos{
         font-size: 45px;
         letter-spacing: -3px;
-    }
-    .eventoProximo a img{
-        width: 250px;
-    }
-    .eventosAnteriores{
-        margin-left: 50px;
-    }
-    .eventosAnteriores div{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .eventosAnteriores a img{
-        padding-left: 20px;
-        width: 250px;
-    }
-    .titulosEventos{
-        font-size: 25px;
-        letter-spacing: -2px;
-    }
-    .charlas article{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .charlas img{
-        width: 300px;
-    }
-    .charlas div{
-        padding-right: 60px;
-    }
-    .equipo{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .equipo img{
-        width: 200px;
-    }
-    .equipo h3{
-        font-size: 18px;
-    }
-    .equipo a{
-        font-size: 15px;
-    }
-    .historiaTed div{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .historiaTed img{
-        width: 400px;
-    }
-    .tedx div{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .tedx img{
-        width: 400px;
-    }
-    .parrafo{
-        font-size: 20px;
-        line-height: 35px;
-    }
-    .tedx{
-        margin-left: 30px;
-        margin-bottom: 50px;
-    }
-    .historiaTed{
-        margin-left: 30px;
-        margin-bottom: 50px;
-    }
-    .formularioContacto div{
-        margin: 30px 50px 50px 180px;
     }
 }
 /* Fin Version Tablet*/
@@ -283,68 +118,12 @@
         top: 15px;
         left: -15px;
     }
-    .eventoProximo a img{
-        width: 350px;
-    }
-    .eventoProximo{
-        margin-left: 150px;
-        margin-bottom: 10px;
-    }
-    .eventosAnteriores{
-        margin-left: 150px;
-        margin-bottom: 30px;
-    }
-    .eventosAnteriores div{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .eventosAnteriores a img{
-        padding-left: 20px;
-        width: 350px;
-    }
-    .charlas img{
-        width: 400px;
-    }
-    .charlas div h3{
-        font-size: 20px;
-    }
-    .charlas h4{
-        margin-top: 60px;
-        margin-left: 80px;
-    }
-    .charlas article{
-        margin-left: 110px;
-        margin-bottom: 50px;
-    }
-    .equipo{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin: 30px 100px 80px 100px;
-    }
-    .equipo div{
-        margin-bottom: 50px;
-    }
-    .equipo img{
-        width: 230px;
-        border-radius: 150px;
-    }
-    .equipo h3{
-        font-size: 20px;
-    }
-    .equipo a{
-        font-size: 16px;
-    }
     .parrafo{
         display: block;
         width: 700px;
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
         line-height: 40px;
-    }
-    .historiaTed h3{
-        margin-top: 50px;
     }
     .titulosDos{
         margin-left: 200px;
@@ -356,20 +135,6 @@
         height: 60px;
         background: none;
         border-bottom: 4px solid var(--color);
-    }
-    .formularioContacto div{
-        margin: 30px 600px 100px 300px;
-    }
-    .formularioContacto p{
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2;
-    width: 410px;
-    padding: 35px;
-    }
-    .formularioContacto div form {
-    margin-left: 30px;
-    margin-bottom: 30px;
     }
 }
 /* Fin Version Desktop */

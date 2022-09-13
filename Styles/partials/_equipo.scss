@@ -39,3 +39,46 @@
         margin-top: 2px;
     }
 }
+/* Fin Version Mobile */
+
+/* Version Tablet */
+@media screen and (min-width: 600px){
+    .equipo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+            width: 200px;
+        }
+        h3{
+            font-size: 18px;
+        }
+        a{
+            font-size: 15px;          
+        }
+    }
+}
+/* Fin Version Tablet */
+
+/* Version Desktop */
+@media screen and (min-width: 1200px){
+    .equipo{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 30px 100px 80px 100px;
+        div{
+            margin-bottom: 50px;
+        }
+        img{
+            width: 230px;
+            border-radius: 150px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+}
+/* Fin Version Desktop */
