@@ -8,25 +8,35 @@
     align-items: center;
     justify-content: space-between;
 }
+.menu{
+    background-color: red;
+}
+.menu-check{
+    background-color: aqua;
+}
 
 /* Version Tablet */
 @media screen and (min-width: 600px){
-    #menu{
-        display: none;
-    }
-    #menu-check{
-        display: none;
+    .header{
+        input{
+            display: none;
+        }
+        label{
+            display: none;
+        }
     }
 }
 /* Fin Version Tablet */
 
 /* Version Desktop */
 @media screen and (min-width: 1200px){
-    #menu{
-        display: none;
-    }
-    #menu-check{
-        display: none;
+    .header{
+        input{
+            display: none;
+        }
+        label{
+            display: none;
+        }
     }
 }
 /* Fin Version Desktop */
