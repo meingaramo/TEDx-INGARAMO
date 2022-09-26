@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: #ffff;
     grid-area: header;
     display: flex;
@@ -8,35 +8,31 @@
     align-items: center;
     justify-content: space-between;
 }
-.menu{
+.menu {
     background-color: red;
 }
-.menu-check{
+.menu-check {
     background-color: aqua;
 }
 
 /* Version Tablet */
 @media screen and (min-width: 600px){
-    .header{
-        input{
-            display: none;
-        }
-        label{
-            display: none;
-        }
+    .menu{
+        display: none;
+    }
+    .menu-check{
+        display: none;
     }
 }
 /* Fin Version Tablet */
 
 /* Version Desktop */
 @media screen and (min-width: 1200px){
-    .header{
-        input{
-            display: none;
-        }
-        label{
-            display: none;
-        }
+    .menu{
+        display: none;
+    }
+    .menu-check{
+        display: none;
     }
 }
 /* Fin Version Desktop */
