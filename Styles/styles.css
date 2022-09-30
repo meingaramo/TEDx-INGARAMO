@@ -9,23 +9,6 @@
   justify-content: space-between;
 }
 
-.nav{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50%;
-  width: 50%;
-  border-bottom-left-radius: 25px;
-  background-color: #aeaeae;
-  opacity: 0.8;
-  padding-top: 25px;
-  padding-right: 25px;
-}
-.nav ul, .nav ul li{
-  display: block;
-  text-align: right;
-}
-
 /* Version Tablet */
 @media screen and (min-width: 600px) {
   #menu {
