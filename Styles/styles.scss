@@ -1,4 +1,4 @@
-@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer", "./partials/eventos", "./partials/contacto","./partials/charlas","./partials/tedx","./partials/equipo","./variables/titulos";
+@import"./partials/header", "./partials/nav", "./partials/index", "./partials/footer", "./partials/eventos", "./partials/contacto","./partials/charlas","./partials/tedx","./partials/equipo";
 
 /* Version Mobile */
 .grid{
@@ -63,6 +63,27 @@
     line-height: 30px;
     margin: 20px 30px 20px 30px;
 }
+.titulos{
+    color: #ffff;
+    display: inline;
+    font-size: 35px;
+    letter-spacing: -2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-left: 40px;
+    margin-top: 50px;
+    --color: #E63629;
+}
+.titulos::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background: none;
+    left: 30px;
+    border-bottom: 4px solid var(--color);
+}
+
 /* Fin Version Mobile */
 
 /* Version Tablet */

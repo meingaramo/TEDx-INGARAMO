@@ -8,6 +8,44 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  border-bottom-left-radius: 25px;
+  background-color: #aeaeae;
+  opacity: 0.8;
+  padding-top: 25px;
+  padding-right: 25px;
+}
+.nav ul, .nav ul li{
+  display: block;
+  text-align: right;
+}
+
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  #menu {
+    display: none;
+  }
+  #menu-check {
+    display: none;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  #menu {
+    display: none;
+  }
+  #menu-check {
+    display: none;
+  }
+}
+/* Fin Version Desktop */
 .nav {
   display: none;
   background-color: rgb(255, 255, 255);
@@ -403,55 +441,6 @@
 }
 
 /* Version Mobile */
-.grid {
-  display: grid;
-  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  height: 100vh;
-  align-content: flex-start;
-}
-
-.titulos {
-  color: white;
-  display: inline;
-  font-size: 35px;
-  letter-spacing: -2px;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  margin-left: 40px;
-  margin-top: 50px;
-  --color: #E63629;
-}
-.titulos:before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 60px;
-  background: none;
-  left: 30px;
-  border-bottom: 4px solid var(--color);
-}
-
-.bottom {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  position: relative;
-  top: 20px;
-  background-color: #E63629;
-  padding: 8px 20px 8px 20px;
-  border-radius: 8px;
-  border: transparent;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.bottom:hover {
-  transform: scale(1.2, 1.2);
-  color: #E63629;
-  background-color: white;
-}
-
 .eventoProximo {
   grid-area: evento;
   margin-left: 50px;
@@ -477,8 +466,7 @@
   padding-bottom: 20px;
   width: 200px;
 }
-
-.titulosEventos {
+.eventosAnteriores .titulosEventos {
   width: 300px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -489,31 +477,165 @@
   padding: 10px;
 }
 
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .eventoProximo a img {
+    width: 250px;
+  }
+  .eventosAnteriores {
+    margin-left: 50px;
+  }
+  .eventosAnteriores div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .eventosAnteriores a img {
+    padding-left: 20px;
+    width: 250px;
+  }
+  .titulosEventos {
+    font-size: 25px;
+    letter-spacing: -2px;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .eventoProximo {
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+  .eventoProximo a img {
+    width: 350px;
+  }
+  .eventosAnteriores {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+  .eventosAnteriores div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .eventosAnteriores a img {
+    padding-left: 20px;
+    width: 350px;
+  }
+}
+/* Fin Version Desktop */
+/* Version Mobile */
+.formularioContacto {
+  grid-area: evento;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.formularioContacto div {
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 2px 2px 11px 2px #e0e0e0;
+  margin: 30px 50px 50px 30px;
+}
+.formularioContacto p {
+  font-size: 15px;
+  color: #E63629;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2;
+  width: 300px;
+}
+.formularioContacto form fieldset {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2;
+  border: none;
+}
+.formularioContacto form fieldset label {
+  margin: 20px 0px 10px 0px;
+}
+.formularioContacto form fieldset input {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  height: 50px;
+  padding: 0px 0px 0px 15px;
+}
+.formularioContacto form fieldset textarea {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  height: 150px;
+  padding: 10px 0px 0px 15px;
+}
+
+.bottomEnviar {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+  background-color: #E63629;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: transparent;
+  transition: 0.3s ease;
+}
+.bottomEnviar:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .formularioContacto div {
+    margin: 30px 50px 50px 180px;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .formularioContacto div {
+    margin: 30px 600px 100px 300px;
+  }
+  .formularioContacto div form {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .formularioContacto p {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2;
+    width: 410px;
+    padding: 35px;
+  }
+}
+/* Fin Version Desktop */
+/* Version Mobile */
 .charlas {
   grid-area: evento;
 }
-
 .charlas h4 {
   margin-left: 50px;
   margin-top: 20px;
 }
-
 .charlas article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 20px 0px 0px 50px;
 }
-
 .charlas img {
   width: 200px;
   box-shadow: 3px 2px 11px 2px #aeaeae;
 }
-
 .charlas div {
   padding-bottom: 60px;
 }
-
 .charlas div h3 {
   text-decoration: none;
   color: #000;
@@ -525,7 +647,6 @@
   top: 10px;
   --color:#E63629;
 }
-
 .charlas div h3::before {
   content: "";
   position: absolute;
@@ -535,64 +656,50 @@
   top: 5px;
   border-top: 3px solid var(--color);
 }
-
 .charlas a {
   text-decoration: none;
 }
 
-.equipo {
-  grid-area: evento;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  position: relative;
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .charlas article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .charlas img {
+    width: 300px;
+  }
+  .charlas div {
+    padding-right: 60px;
+  }
 }
-
-.equipo div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .charlas img {
+    width: 400px;
+  }
+  .charlas div h3 {
+    font-size: 20px;
+  }
+  .charlas h4 {
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+  .charlas article {
+    margin-left: 110px;
+    margin-bottom: 50px;
+  }
 }
-
-.equipo img {
-  width: 150px;
-  border-radius: 106px;
-  padding: 3px;
-  border: 3px dotted #00cddc;
-  transition: 0.3s;
-}
-
-.equipo img:hover {
-  transform: rotate(15deg) scale(1.1, 1.1);
-  border: 5px dotted #E63629;
-}
-
-.equipo h3 {
-  text-decoration: none;
-  color: #000;
-  font-size: 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.equipo a {
-  color: #00cddc;
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  letter-spacing: 2;
-  margin-top: 2px;
-}
-
+/* Fin Version Desktop */
+/* Version Mobile */
 .historiaTed {
   grid-area: evento;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
-
 .historiaTed img {
   width: 300px;
   margin-left: 30px;
@@ -603,10 +710,163 @@
   display: flex;
   flex-direction: column;
 }
-
 .tedx img {
   width: 300px;
   margin-left: 30px;
+}
+
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .historiaTed {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .historiaTed div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .historiaTed img {
+    width: 400px;
+  }
+  .parrafo {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .tedx {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .tedx img {
+    width: 400px;
+  }
+  .tedx div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .historiaTed h3 {
+    margin-top: 50px;
+  }
+}
+/* Fin Version Desktop */
+/* Version Mobile */
+.equipo {
+  grid-area: evento;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+.equipo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.equipo img {
+  width: 150px;
+  border-radius: 106px;
+  padding: 3px;
+  border: 3px dotted #00cddc;
+  transition: 0.3s;
+}
+.equipo img:hover {
+  transform: rotate(15deg) scale(1.1, 1.1);
+  border: 5px dotted #E63629;
+}
+.equipo h3 {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.equipo h3 {
+  color: #00cddc;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2;
+  margin-top: 2px;
+}
+
+/* Fin Version Mobile */
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .equipo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .equipo img {
+    width: 200px;
+  }
+  .equipo h3 {
+    font-size: 18px;
+  }
+  .equipo a {
+    font-size: 15px;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .equipo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px 100px 80px 100px;
+  }
+  .equipo div {
+    margin-bottom: 50px;
+  }
+  .equipo img {
+    width: 230px;
+    border-radius: 150px;
+  }
+  .equipo h3 {
+    font-size: 20px;
+  }
+  .equipo a {
+    font-size: 16px;
+  }
+}
+/* Fin Version Desktop */
+/* Version Mobile */
+.grid {
+  display: grid;
+  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100vh;
+  align-content: flex-start;
+}
+
+.bottom {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  position: relative;
+  top: 20px;
+  background-color: #E63629;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.bottom:hover {
+  transform: scale(1.2, 1.2);
+  color: #E63629;
+  background-color: white;
 }
 
 .titulosDos {
@@ -641,74 +901,26 @@
   margin: 20px 30px 20px 30px;
 }
 
-.formularioContacto {
-  grid-area: evento;
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.formularioContacto div {
-  padding: 30px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  box-shadow: 2px 2px 11px 2px #e0e0e0;
-  margin: 30px 50px 50px 30px;
-}
-
-.formularioContacto p {
-  font-size: 15px;
-  color: #E63629;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2;
-  width: 300px;
-}
-
-.formularioContacto form fieldset {
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  color: #000;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  letter-spacing: 2;
-  border: none;
-}
-
-.formularioContacto form fieldset label {
-  margin: 20px 0px 10px 0px;
-}
-
-.formularioContacto form fieldset input {
-  border: 1px solid rgb(70, 70, 70);
-  border-radius: 10px;
-  height: 50px;
-  padding: 0px 0px 0px 15px;
-}
-
-.formularioContacto form fieldset textarea {
-  border: 1px solid rgb(70, 70, 70);
-  border-radius: 10px;
-  height: 150px;
-  padding: 10px 0px 0px 15px;
-}
-
-.bottomEnviar {
+.titulos {
   color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  margin-top: 20px;
-  background-color: #E63629;
-  padding: 8px 20px 8px 20px;
-  border-radius: 8px;
-  border: transparent;
-  transition: 0.3s ease;
+  display: inline;
+  font-size: 35px;
+  letter-spacing: -2px;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  margin-left: 40px;
+  margin-top: 50px;
+  --color: #E63629;
 }
 
-.bottomEnviar:hover {
-  transform: scale(1.2, 1.2);
+.titulos::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  background: none;
+  left: 30px;
+  border-bottom: 4px solid var(--color);
 }
 
 /* Fin Version Mobile */
@@ -720,81 +932,6 @@
   .titulos {
     font-size: 45px;
     letter-spacing: -3px;
-  }
-  .eventoProximo a img {
-    width: 250px;
-  }
-  .eventosAnteriores {
-    margin-left: 50px;
-  }
-  .eventosAnteriores div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .eventosAnteriores a img {
-    padding-left: 20px;
-    width: 250px;
-  }
-  .titulosEventos {
-    font-size: 25px;
-    letter-spacing: -2px;
-  }
-  .charlas article {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .charlas img {
-    width: 300px;
-  }
-  .charlas div {
-    padding-right: 60px;
-  }
-  .equipo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .equipo img {
-    width: 200px;
-  }
-  .equipo h3 {
-    font-size: 18px;
-  }
-  .equipo a {
-    font-size: 15px;
-  }
-  .historiaTed div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .historiaTed img {
-    width: 400px;
-  }
-  .tedx div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .tedx img {
-    width: 400px;
-  }
-  .parrafo {
-    font-size: 20px;
-    line-height: 35px;
-  }
-  .tedx {
-    margin-left: 30px;
-    margin-bottom: 50px;
-  }
-  .historiaTed {
-    margin-left: 30px;
-    margin-bottom: 50px;
-  }
-  .formularioContacto div {
-    margin: 30px 50px 50px 180px;
   }
 }
 /* Fin Version Tablet*/
@@ -819,68 +956,12 @@
     top: 15px;
     left: -15px;
   }
-  .eventoProximo a img {
-    width: 350px;
-  }
-  .eventoProximo {
-    margin-left: 150px;
-    margin-bottom: 10px;
-  }
-  .eventosAnteriores {
-    margin-left: 150px;
-    margin-bottom: 30px;
-  }
-  .eventosAnteriores div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .eventosAnteriores a img {
-    padding-left: 20px;
-    width: 350px;
-  }
-  .charlas img {
-    width: 400px;
-  }
-  .charlas div h3 {
-    font-size: 20px;
-  }
-  .charlas h4 {
-    margin-top: 60px;
-    margin-left: 80px;
-  }
-  .charlas article {
-    margin-left: 110px;
-    margin-bottom: 50px;
-  }
-  .equipo {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 30px 100px 80px 100px;
-  }
-  .equipo div {
-    margin-bottom: 50px;
-  }
-  .equipo img {
-    width: 230px;
-    border-radius: 150px;
-  }
-  .equipo h3 {
-    font-size: 20px;
-  }
-  .equipo a {
-    font-size: 16px;
-  }
   .parrafo {
     display: block;
     width: 700px;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     line-height: 40px;
-  }
-  .historiaTed h3 {
-    margin-top: 50px;
   }
   .titulosDos {
     margin-left: 200px;
@@ -892,20 +973,6 @@
     height: 60px;
     background: none;
     border-bottom: 4px solid var(--color);
-  }
-  .formularioContacto div {
-    margin: 30px 600px 100px 300px;
-  }
-  .formularioContacto p {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2;
-    width: 410px;
-    padding: 35px;
-  }
-  .formularioContacto div form {
-    margin-left: 30px;
-    margin-bottom: 30px;
   }
 }
 /* Fin Version Desktop *//*# sourceMappingURL=styles.css.map */
