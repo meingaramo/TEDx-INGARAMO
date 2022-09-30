@@ -10,43 +10,42 @@
   z-index: 10;
 }
 
-#menu-check {
-  display: none;
+@media screen and (max-width: 600px) {
+  #menu-check {
+    display: none;
+  }
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu-check:checked ~ label #menu-abrir {
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-cerrar {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: #000;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 15;
+  }
+  #menu:hover {
+    color: #E63629;
+  }
+  #menu-cerrar {
+    display: none;
+    font-size: 0.8rem;
+  }
 }
-#menu-check:not(:checked) ~ nav {
-  display: none;
-}
-#menu-check:checked ~ nav {
-  display: block;
-}
-#menu-check:checked ~ label #menu-abrir {
-  display: none;
-}
-#menu-check:checked ~ label #menu-cerrar {
-  display: block;
-}
-
-#menu {
-  display: block;
-  color: #000;
-  background-color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  z-index: 15;
-}
-#menu:hover {
-  color: #E63629;
-}
-
-#menu-cerrar {
-  display: none;
-  font-size: 0.8rem;
-}
-
 /* Version Tablet */
 @media screen and (min-width: 600px) {
   #menu {
@@ -72,7 +71,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 50%;
+    height: 40%;
     width: 15%;
     border-bottom-left-radius: 25px;
     background-color: #ffffff;

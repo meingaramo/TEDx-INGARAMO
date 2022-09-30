@@ -9,54 +9,49 @@
     justify-content: space-between;
     z-index: 10;
 }
-#menu-check{
-    display: none;
-    &:not(:checked) ~ nav{
+@media screen and (max-width: 600px){
+    #menu-check{
         display: none;
+        &:not(:checked) ~ nav{
+            display: none;
+        }
+        &:checked ~ nav{
+            display: block;
+        }
+        &:checked ~ label #menu-abrir{
+            display: none;
+        }
+        &:checked ~ label #menu-cerrar{
+            display: block;
+        }
     }
-    &:checked ~ nav{
+    #menu{
         display: block;
-    }
-    &:checked ~ label #menu-abrir{
+        color:  #000;
+        background-color: #ffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 15;
+        &:hover{
+            color: #E63629;
+        }
+    } 
+    #menu-cerrar{
         display: none;
+        font-size: 0.8rem;
     }
-    &:checked ~ label #menu-cerrar{
-        display: block;
-    }
-}
-#menu{
-    display: block;
-    color:  #000;
-    background-color: #ffff;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 15;
-    &:hover{
-        color: #E63629;
-    }
-}
-    
-#menu-cerrar{
-    display: none;
-    font-size: 0.8rem;
-}
-.menu {
-    background-color: red;
-}
-.menu-check {
-    background-color: aqua;
 }
 
 /* Version Tablet */
 @media screen and (min-width: 600px){
-    .menu{
+    #menu{
         display: none;
     }
-    .menu-check{
+    #menu-check{
         display: none;
     }
 }
@@ -64,10 +59,10 @@
 
 /* Version Desktop */
 @media screen and (min-width: 1200px){
-    .menu{
+    #menu{
         display: none;
     }
-    .menu-check{
+    #menu-check{
         display: none;
     }
 }
