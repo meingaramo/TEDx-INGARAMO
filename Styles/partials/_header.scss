@@ -7,17 +7,24 @@
     padding: 15px;
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 #menu-check{
     display: none;
-    :not(:checked) ~ nav{
+    &:not(:checked) ~ nav{
         display: none;
     }
-    :checked ~ nav{
+    &:checked ~ nav{
         display: block;
     }
-  }
-  #menu{
+    &:checked ~ label #menu-abrir{
+        display: none;
+    }
+    &:checked ~ label #menu-cerrar{
+        display: block;
+    }
+}
+#menu{
     display: block;
     color:  #000;
     background-color: #ffff;
@@ -27,22 +34,17 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    z-index: 1;
-    :hover{
+    z-index: 15;
+    &:hover{
         color: #E63629;
     }
-  }
+}
     
-  #menu-cerrar{
+#menu-cerrar{
     display: none;
-  }
-  #menu-check:checked ~ label #menu-abrir{
-    display: none;
-  }
-  #menu-check:checked ~ label #menu-cerrar{
-    display: block;
-  }
-  
+    font-size: 0.8rem;
+}
+
 /* Version Tablet */
 @media screen and (min-width: 600px){
     #menu{
