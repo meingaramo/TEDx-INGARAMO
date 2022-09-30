@@ -1,4 +1,4 @@
-.header{
+.header {
     background-color: #ffff;
     grid-area: header;
     display: flex;
@@ -44,13 +44,19 @@
     display: none;
     font-size: 0.8rem;
 }
+.menu {
+    background-color: red;
+}
+.menu-check {
+    background-color: aqua;
+}
 
 /* Version Tablet */
 @media screen and (min-width: 600px){
-    #menu{
+    .menu{
         display: none;
     }
-    #menu-check{
+    .menu-check{
         display: none;
     }
 }
@@ -58,10 +64,10 @@
 
 /* Version Desktop */
 @media screen and (min-width: 1200px){
-    #menu{
+    .menu{
         display: none;
     }
-    #menu-check{
+    .menu-check{
         display: none;
     }
 }
