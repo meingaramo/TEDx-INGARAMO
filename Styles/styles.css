@@ -883,15 +883,6 @@
 }
 /* Fin Version Desktop */
 /* Version Mobile */
-.grid {
-  display: grid;
-  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  height: 100vh;
-  align-content: flex-start;
-}
-
 .bottom {
   color: white;
   font-family: "Open Sans", sans-serif;
