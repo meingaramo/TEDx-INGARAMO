@@ -71,7 +71,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 40%;
+    height: 25%;
     width: 15%;
     border-bottom-left-radius: 25px;
     background-color: #ffffff;
@@ -221,35 +221,19 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 30px;
-  padding: 10px;
+  max-width: 484px;
+  align-content: center;
+  margin: 30px;
 }
-
-.blackVertical img {
-  height: 130px;
-  padding: 5px;
+.logos a {
+  text-decoration: none;
 }
-
-.blackHorizontal img {
-  width: 130px;
-  padding: 5px;
+.logos a img {
+  height: 80px;
+  padding: 1px;
 }
-
-.goldenHorizontal img {
-  width: 84px;
-  padding: 5px;
-}
-
-.silverVertical img {
-  height: 54px;
-  padding: 5px;
-}
-
-.silverHorizontal img {
-  width: 54px;
-  padding: 5px;
+.logos a img:hover {
+  background-color: #E63629;
 }
 
 /* Fin Version Mobile */
@@ -283,13 +267,15 @@
     margin-top: 30px;
   }
   .logos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 30px;
-    max-width: 500px;
+    max-width: 900px;
+  }
+  .logos a {
+    text-decoration: none;
+  }
+  .logos a img {
+    height: 120px;
+    padding: 3px;
+    margin: 8px;
   }
 }
 /* Fin Version Tablet */
@@ -384,72 +370,18 @@
     margin-top: 30px;
     margin-right: 300px;
   }
-  #sponsors {
-    height: 700px;
-  }
-  .blackVertical img {
-    height: 280px;
-  }
-  .blackHorizontal img {
-    width: 280px;
-  }
-  .goldenHorizontal img {
-    width: 180px;
-  }
-  .silverVertical img {
-    height: 115px;
-  }
-  .silverHorizontal img {
-    width: 115px;
-  }
-  #jigger {
-    position: relative;
-    top: 165px;
-    left: 760px;
-  }
-  #spaggiari {
-    position: relative;
-    bottom: 3px;
-    left: 470px;
-  }
-  #vti {
-    position: relative;
-    top: 0px;
-    left: 380px;
-  }
-  #kual {
-    position: relative;
-    top: 38px;
-    left: 570px;
-  }
-  #itrade {
-    position: relative;
-    bottom: 193px;
-    right: 10px;
-  }
-  #ats {
-    position: relative;
-    bottom: 160px;
-    left: 760px;
-  }
-  #victorian {
-    position: relative;
-    top: 2px;
-    left: 455px;
-  }
-  #itec {
-    position: relative;
-    bottom: 450px;
-    left: 760px;
-  }
-  #agro {
-    position: relative;
-    bottom: 217px;
-    left: 70px;
-  }
   .logos {
-    max-width: 100vh;
-    max-height: 500px;
+    max-width: 100vw;
+    position: relative;
+    margin-left: 250px;
+    margin-top: 50px;
+  }
+  .logos a {
+    text-decoration: none;
+  }
+  .logos a img {
+    height: 160px;
+    padding: 4px;
   }
   #voluntarios {
     height: 500px;
@@ -480,6 +412,9 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+.footer div a img {
+  padding: 3px;
 }
 
 /* Version Mobile */
@@ -883,6 +818,15 @@
 }
 /* Fin Version Desktop */
 /* Version Mobile */
+.grid {
+  display: grid;
+  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100vh;
+  align-content: flex-start;
+}
+
 .bottom {
   color: white;
   font-family: "Open Sans", sans-serif;
