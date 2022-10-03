@@ -19,14 +19,14 @@
         padding-bottom: 60px;
         h3{
             text-decoration: none;
-            color: map-get($colors, colorPrincipal);
+            color: map-get($colors, colorSecundario);
             font-size: 15px;
             font-family: map-get($titulo, fontsTitulos);
             font-weight: 400;
             padding-top: 20px;
             position: relative;
             top: 10px;
-            --color: map-get($colors, colorPrincipal);
+            --color: #E63629;
             &::before{
                 content: '';
                 position: absolute;

@@ -443,8 +443,12 @@
 /* Fin Version Tablet */
 /* Version Desktop */
 @media screen and (min-width: 1200px) {
+  .footer {
+    font-size: 18px;
+  }
   .footer img {
     margin-left: 15px;
+    width: 115px;
   }
   .footer div {
     margin-right: 15px;
@@ -652,14 +656,14 @@
 }
 .charlas div h3 {
   text-decoration: none;
-  color: #E63629;
+  color: #000000;
   font-size: 15px;
   font-family: "Lato";
   font-weight: 400;
   padding-top: 20px;
   position: relative;
   top: 10px;
-  --color: map-get($colors, colorPrincipal);
+  --color: #E63629;
 }
 .charlas div h3::before {
   content: "";
