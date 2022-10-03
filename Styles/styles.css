@@ -414,7 +414,6 @@
   color: #ffffff;
 }
 .footer img {
-  width: 70px;
   padding-right: 10px;
 }
 .footer div {
@@ -433,7 +432,6 @@
     font-size: 15px;
   }
   .footer img {
-    width: 100px;
     padding-right: 0px;
   }
   .footer div a img {
@@ -448,7 +446,6 @@
   }
   .footer img {
     margin-left: 15px;
-    width: 115px;
   }
   .footer div {
     margin-right: 15px;
