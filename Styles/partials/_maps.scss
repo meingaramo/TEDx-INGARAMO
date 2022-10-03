@@ -4,13 +4,13 @@ $colors: (
     colorPrincipal: #E63629,
     colorEquipo: #00cddc,
     colorDegradado: linear-gradient(45deg, #E63629, #000000),
-)
+);
 
-$titulos: (
+$titulo: (
     tituloHome: 35px, 
-    tipoTitulos: 'Lato', sans-serif,
-)
+    fontsTitulos: 'Lato', sans-serif,
+);
 
 $borders: (
     borderRadius: 8px,
-)
+);
