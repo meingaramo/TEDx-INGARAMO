@@ -1,5 +1,5 @@
 .header {
-    background-color: #ffff;
+    background-color: map-get($colors, colorHome);
     grid-area: header;
     display: flex;
     height: 40px;
@@ -27,8 +27,8 @@
     }
     #menu{
         display: block;
-        color:  #000;
-        background-color: #ffff;
+        color:  map-get($colors, colorSecundario);
+        background-color: map-get($colors, colorHome);
         font-family: "Lato", sans-serif;
         font-weight: 600;
         font-size: 1rem;
@@ -37,7 +37,7 @@
         top: 15px;
         z-index: 15;
         &:hover{
-            color: #E63629;
+            color: map-get($colors, colorPrincipal);
         }
     } 
     #menu-cerrar{

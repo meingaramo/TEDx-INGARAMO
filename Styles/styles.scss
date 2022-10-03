@@ -1,20 +1,6 @@
-@import"./partials/maps", "./partials/header", "./partials/nav", "../Styles/partials/variables","./partials/index", "./partials/footer", "./partials/eventos", "./partials/contacto","./partials/charlas","./partials/tedx","./partials/equipo";
+@import "./partials/maps", "./partials/header", "./partials/nav","./partials/index", "./partials/footer", "./partials/eventos", "./partials/contacto","./partials/charlas","./partials/tedx","./partials/equipo";
 
 /* Version Mobile */
-.grid{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "evento"
-    "oradores"
-    "sponsors"
-    "voluntarios"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7,1fr);
-    height: 100vh;
-    align-content: flex-start;
-}
 .bottom{
     color: #ffff;
     font-family: 'Open Sans', sans-serif;

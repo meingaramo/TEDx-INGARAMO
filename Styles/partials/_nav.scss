@@ -6,7 +6,7 @@
         height: max-content;
         width: 15%;
         border-bottom-left-radius: 25px;
-        background-color: #ffffff;
+        background-color: map-get($colors, colorHome);
         opacity: 0.8;
         padding-top: 25px;
         padding-right: 55px;
@@ -19,12 +19,12 @@
                 margin-left: 2rem;
                 a{
                     text-decoration: none;
-                    color: #000;
-                    font-family: 'Lato', sans-serif;
+                    color: map-get($colors, colorSecundario);
+                    font-family: map-get($titulo, fontsTitulos);
                     font-weight: 750;
                     font-size: 11px;
                     &:hover{
-                        color: #E63629; 
+                        color: map-get($colors, colorPrincipal); 
                     }
                 }
             }

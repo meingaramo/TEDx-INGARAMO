@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: #ffffff;
   grid-area: header;
   display: flex;
   height: 40px;
@@ -28,8 +28,8 @@
   }
   #menu {
     display: block;
-    color: #000;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -71,7 +71,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 25%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     width: 15%;
     border-bottom-left-radius: 25px;
     background-color: #ffffff;
@@ -90,8 +92,8 @@
   }
   .nav ul li a {
     text-decoration: none;
-    color: #000;
-    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-family: "Lato";
     font-weight: 750;
     font-size: 11px;
   }
@@ -152,7 +154,7 @@
 }
 
 .body_index {
-  color: white;
+  color: #ffffff;
   padding-top: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -175,7 +177,7 @@
 #tedx180E div h5 {
   position: relative;
   top: 30px;
-  color: white;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
@@ -398,7 +400,7 @@
 /* Fin Version Desktop */
 .footer {
   display: flex;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   height: 80px;
   grid-area: footer;
   justify-content: space-between;
@@ -406,7 +408,7 @@
   align-items: center;
   font-size: 15px;
   font-family: "Lato", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 .footer div {
   display: flex;
@@ -446,7 +448,7 @@
 
 .titulosEventos {
   width: 300px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -505,18 +507,19 @@
 /* Fin Version Desktop */
 /* Version Mobile */
 .formularioContacto {
-  grid-area: evento;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100vw;
 }
 .formularioContacto div {
+  grid-area: oradores;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 30px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 2px 2px 11px 2px #e0e0e0;
-  margin: 30px 50px 50px 30px;
 }
 .formularioContacto p {
   font-size: 15px;
@@ -616,14 +619,14 @@
 }
 .charlas div h3 {
   text-decoration: none;
-  color: #000;
+  color: #E63629;
   font-size: 15px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-weight: 400;
   padding-top: 20px;
   position: relative;
   top: 10px;
-  --color:#E63629;
+  --color: map-get($colors, colorPrincipal);
 }
 .charlas div h3::before {
   content: "";
@@ -762,16 +765,16 @@
 }
 .equipo h3 {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 15px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-weight: 600;
   margin-top: 10px;
 }
 .equipo h3 {
   color: #00cddc;
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-weight: 400;
   letter-spacing: 2;
   margin-top: 2px;
@@ -819,15 +822,6 @@
 }
 /* Fin Version Desktop */
 /* Version Mobile */
-.grid {
-  display: grid;
-  grid-template-areas: "header" "evento" "oradores" "sponsors" "voluntarios" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
-  height: 100vh;
-  align-content: flex-start;
-}
-
 .bottom {
   color: white;
   font-family: "Open Sans", sans-serif;

@@ -1,14 +1,13 @@
 $colors: (
-    titulosHome: #ffff,
-    titulosPaginas: #0000,
+    colorHome: #ffffff,
+    colorSecundario: #000000,
     colorPrincipal: #E63629,
     colorEquipo: #00cddc,
     colorDegradado: linear-gradient(45deg, #E63629, #000000),
 );
 
 $titulo: (
-    tituloHome: 35px, 
-    fontsTitulos: 'Lato', sans-serif,
+    fontsTitulos: 'Lato',
 );
 
 $borders: (

@@ -1,20 +1,21 @@
 /* Version Mobile */
 .formularioContacto{
-    grid-area: evento;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 30px;
-    margin-top: 30px;
+    width: 100vw;
     div{
+        grid-area: oradores;
+        margin-left: 40px;
+        margin-right: 40px;
         padding: 30px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: 2px 2px 11px 2px #e0e0e0;
-        margin: 30px 50px 50px 30px;
     }
     p{
         font-size: 15px;
-        color: #E63629;
+        color: map-get($colors, colorPrincipal);
         font-family: 'Lato', sans-serif;
         font-weight: 600;
         letter-spacing: 2;
@@ -54,9 +55,9 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     margin-top: 20px;
-    background-color: #E63629;
+    background-color: map-get($colors, colorPrincipal);
     padding: 8px 20px 8px 20px;
-    border-radius: 8px;
+    border-radius: map-get($borders, borderRadius);
     border: transparent;
     transition: 0.3s ease;
     &:hover{

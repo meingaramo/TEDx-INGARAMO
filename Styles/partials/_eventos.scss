@@ -25,7 +25,7 @@
 }
 .titulosEventos{
     width: 300px;
-    font-family: 'Lato', sans-serif;
+    font-family: map-get($titulo, fontsTitulos);
     font-size: 20px;
     font-weight: 400;
     letter-spacing: -1px;
