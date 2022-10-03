@@ -34,6 +34,9 @@
     font-weight: 600;
     font-size: 1rem;
     position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     right: 15px;
     top: 15px;
     z-index: 15;
@@ -406,9 +409,13 @@
   justify-content: space-between;
   width: 1fr;
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #ffffff;
+}
+.footer img {
+  width: 70px;
+  padding-right: 10px;
 }
 .footer div {
   display: flex;
@@ -417,8 +424,33 @@
 }
 .footer div a img {
   padding: 3px;
+  width: 25px;
 }
 
+/* Version Tablet */
+@media screen and (min-width: 600px) {
+  .footer {
+    font-size: 15px;
+  }
+  .footer img {
+    width: 100px;
+    padding-right: 0px;
+  }
+  .footer div a img {
+    width: 35px;
+  }
+}
+/* Fin Version Tablet */
+/* Version Desktop */
+@media screen and (min-width: 1200px) {
+  .footer img {
+    margin-left: 15px;
+  }
+  .footer div {
+    margin-right: 15px;
+  }
+}
+/* Fin Version Desktop */
 /* Version Mobile */
 .eventoProximo {
   grid-area: evento;
@@ -516,6 +548,7 @@
   grid-area: oradores;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 35px;
   padding: 30px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
